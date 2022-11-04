@@ -44,19 +44,10 @@ function App() {
       
       <Routes>
         <Route path="/" element={<Home posts={posts}/>}/>
-      </Routes>
-
-      <Routes>
         <Route path="/about" element={<About/>}/>
-      </Routes>
-      <Routes>
         <Route path="/user/jjak" element={<UserInfo/>}/>
-      </Routes>
-      <Routes>
         <Route path="/login" element={<Login/>}/>
-      </Routes>
-      <Routes>
-        <Route element={<Page404/>}/>
+        <Route path="*" element={<Page404/>}/>
       </Routes>
       
     
